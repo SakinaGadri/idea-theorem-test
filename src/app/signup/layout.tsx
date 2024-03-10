@@ -1,5 +1,3 @@
-import Navbar from "./navbar/navbar"
-
 export default function DashboardLayout({
     children,
   }: {
@@ -7,7 +5,6 @@ export default function DashboardLayout({
   }) {
     return (
       <section>
-        <Navbar />
         {children}
       </section>
     )

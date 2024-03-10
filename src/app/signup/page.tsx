@@ -1,3 +1,14 @@
+import Navbar from "./navbar/navbar";
+import Form from "./form/form";
+
 export default function Signup() {
-    return <h1>Hello, Next.js! This is signup page</h1>
-  }
+  return (
+    <div className="flex flex-col ">
+      <Navbar />
+      <div>
+        <h1 className={`text-[#2C3642] mt-[10%] mx-[25%] mb-[2%] text-[20px]`}>Create User Account</h1>
+      </div>
+      <Form />
+    </div>
+  )
+}
