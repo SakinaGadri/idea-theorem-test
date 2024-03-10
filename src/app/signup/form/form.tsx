@@ -24,11 +24,11 @@ const Form = () => {
 
 
     return (
-        <div className="flex place-items-center shadow-md bg-white rounded-md p-5 mx-[25%] flex-col max-w-lg ">
-            <form>
+        <form>
+            <div className="flex shadow-md bg-white rounded-md p-5 mx-[25%] flex-col max-w-lg gap-y-2">
                 <InputField name="Full Name" type="text" />
                 <InputField name="Contact Number" type="tel" />
-                <label htmlFor="birthdate" className={`mb-10 text-[16px]`}>Birthdate</label>
+                <label htmlFor="birthdate" className="text-[16px]">Birthdate</label>
                 <div className="flex justify-center gap-x-2.5">
                     <select
                         className="border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -57,17 +57,15 @@ const Form = () => {
                     </select>
                 </div>
 
-
                 <InputField name="Email" type="email" />
                 <InputField name="Password" type="password" />
                 <InputField name="Confirm Password" type="password" />
-
-                <div className="mt-6 flex items-center justify-center gap-x-2.5">
-                    <BasicButton additionalStyle="text-[#127C95] border-solid border-[1px] border-[#127C95]" text="Cancel" />
-                    <BasicButton additionalStyle="text-white bg-[#127C95]" text="Submit" />
-                </div>
-            </form>
-        </div>
+            </div>
+            <div className="mt-6 mr-[100px] flex items-center justify-center gap-x-2.5">
+                <BasicButton additionalStyle="text-[#127C95] border-solid border-[1px] border-[#127C95]" text="Cancel" />
+                <BasicButton additionalStyle="text-white bg-[#127C95]" text="Submit" />
+            </div>
+        </form>
     );
 };
 

@@ -3,7 +3,7 @@ import React from "react";
 const InputField = ({ name="", type = "text" }) => {
     const fieldName = name.split(" ").join("-");
     return (
-        <label htmlFor={fieldName} className={`mb-10 text-[16px]`}>
+        <label htmlFor={fieldName} className="text-[16px]">
             {name}
             <input
                 type={type}
