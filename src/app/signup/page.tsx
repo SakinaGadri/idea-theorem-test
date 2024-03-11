@@ -6,7 +6,7 @@ export default function Signup() {
     <div className="flex flex-col ">
       <Navbar />
       <div>
-        <h1 className="text-[#2C3642] sm:mt-[10%] mt-[20%] mx-[25%] mb-[2%] text-[20px]">Create User Account</h1>
+        <h1 className="flex text-[#2C3642] text-[20px] sm:mt-[100px] mt-[20%] mx-[25%] sm:mb-[20px] mb-[2%]">Create User Account</h1>
       </div>
       <Form />
     </div>

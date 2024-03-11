@@ -1,14 +1,15 @@
 import React from "react";
 
-const BasicButton = ({ additionalStyle="", text="" }) => {
+const BasicButton = ({ isLoading = false, additionalStyle = "", text = "" }) => {
     return (
         <button
+            disabled={isLoading}
             type="submit"
             className={`rounded-md px-[32px] py-[10px] text-[16px] ${additionalStyle}`}
         >
-            {text}
+            {isLoading ? 'Loading...' : text}
         </button>
     )
-}
+};
 
 export default BasicButton;
